@@ -34,13 +34,13 @@ pnpm dev
 
 ## Scripts racine
 
-| Commande         | Description                                  |
-|------------------|----------------------------------------------|
-| `pnpm dev`       | Démarre web et api en mode watch parallèle   |
-| `pnpm build`     | Build tous les packages (ordre topologique)  |
-| `pnpm typecheck` | Vérification TypeScript de tous les projets  |
-| `pnpm test`      | Lance tous les tests                         |
-| `pnpm format`    | Formate le code avec Prettier                |
+| Commande         | Description                                 |
+| ---------------- | ------------------------------------------- |
+| `pnpm dev`       | Démarre web et api en mode watch parallèle  |
+| `pnpm build`     | Build tous les packages (ordre topologique) |
+| `pnpm typecheck` | Vérification TypeScript de tous les projets |
+| `pnpm test`      | Lance tous les tests                        |
+| `pnpm format`    | Formate le code avec Prettier               |
 | `pnpm clean`     | Supprime les dossiers de build              |
 
 ## Documentation

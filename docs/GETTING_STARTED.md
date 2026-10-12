@@ -32,7 +32,9 @@ Exemple — endpoint `health` :
 
 ```ts
 // packages/shared/src/index.ts
-export interface HealthResponse { status: 'ok' }
+export interface HealthResponse {
+  status: 'ok';
+}
 export const API_ROUTES = { hello: '/hello', health: '/health' } as const;
 ```
 
@@ -44,7 +46,9 @@ import { API_ROUTES, HealthResponse } from '@monorepo/shared';
 @Controller()
 export class HealthController {
   @Get(API_ROUTES.health)
-  getHealth(): HealthResponse { return { status: 'ok' }; }
+  getHealth(): HealthResponse {
+    return { status: 'ok' };
+  }
 }
 ```
 

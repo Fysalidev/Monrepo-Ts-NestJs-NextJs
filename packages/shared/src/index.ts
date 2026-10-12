@@ -8,5 +8,5 @@ export interface ApiResult<T> {
 }
 
 export const API_ROUTES = {
-  hello: "/hello",
+  hello: '/hello',
 } as const;

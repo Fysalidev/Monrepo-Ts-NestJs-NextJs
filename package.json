@@ -12,6 +12,7 @@
     "test": "pnpm -r test",
     "typecheck": "pnpm -r typecheck",
     "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "clean": "pnpm -r clean && rm -rf node_modules"
   },
   "devDependencies": {

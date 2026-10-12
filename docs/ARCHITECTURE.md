@@ -4,11 +4,11 @@
 
 Le monorepo est géré par **pnpm workspaces**. Trois projets :
 
-| Projet             | Nom              | Description                                             |
-|--------------------|------------------|---------------------------------------------------------|
-| `apps/web`         | `@monorepo/web`  | Frontend Next.js 15 (App Router, React 19)             |
-| `apps/api`         | `@monorepo/api`  | Backend NestJS 11                                       |
-| `packages/shared`  | `@monorepo/shared` | Types TS et constantes partagés entre web et api       |
+| Projet            | Nom                | Description                                      |
+| ----------------- | ------------------ | ------------------------------------------------ |
+| `apps/web`        | `@monorepo/web`    | Frontend Next.js 15 (App Router, React 19)       |
+| `apps/api`        | `@monorepo/api`    | Backend NestJS 11                                |
+| `packages/shared` | `@monorepo/shared` | Types TS et constantes partagés entre web et api |
 
 ## Flux de dépendances
 
@@ -29,10 +29,10 @@ apps/web  ──► packages/shared ◄── apps/api
 
 ## Réseau
 
-| Service | Port |
-|---------|------|
-| Next.js (web)  | 3000 |
-| NestJS (api)   | 3001 |
+| Service       | Port |
+| ------------- | ---- |
+| Next.js (web) | 3000 |
+| NestJS (api)  | 3001 |
 
 Le frontend appelle l'API via `API_BASE_URL` (défaut `http://localhost:3001`). En server-side rendering, l'URL doit être joignable depuis le process Next.js.
 
